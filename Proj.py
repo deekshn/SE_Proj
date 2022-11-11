@@ -1,5 +1,5 @@
 # %%writefile app.py
-pip3 install tweepy
+conda install -c conda-forge tweepy
 import streamlit as st
 import tweepy
 from textblob import TextBlob
