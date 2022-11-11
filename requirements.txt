@@ -3,6 +3,6 @@ streamlit
 pandas
 transformers
 tensorflow
-Textblob
-Wordcloud
-clean
+textblob
+wordcloud
+cleantext
