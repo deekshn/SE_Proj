@@ -1,7 +1,5 @@
 # %%writefile app.py
-git clone https://github.com/tweepy/tweepy.git
-cd tweepy
-pip install
+pip3 install tweepy
 import streamlit as st
 import tweepy
 from textblob import TextBlob
