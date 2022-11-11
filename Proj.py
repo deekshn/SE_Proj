@@ -3,7 +3,7 @@ import streamlit as st
 import tweepy
 from textblob import TextBlob
 from wordcloud import WordCloud
-from cleantext import clean
+# from cleantext import clean
 import pandas as pd
 import numpy as np
 import re
@@ -46,7 +46,7 @@ def cleanTxt(text):
   text = re.sub('@[A-Za-z0-9]+', '', text) #Removed @mentions
   text = re.sub(r'#', '', text)            #Removing the # symbol
   text = re.sub(r'RT[\s]+', '', text)      #Removing RT
-  text = clean(text, no_emoji=True)        #Remove the emojis
+#   text = clean(text, no_emoji=True)        #Remove the emojis
   text = re.sub(r"\S*https?:\S*", "", text) #Remove the hyperlink
   
   return text
